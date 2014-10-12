@@ -1,6 +1,6 @@
 source("helper.R")
 data <- load.data()
-png(file="plot3.png", width=480, height=480)
+png(file="plot3.png", width=480, height=480, bg="transparent")
 with(data, plot(PosixDate, Sub_metering_1, type="n", xlab="", ylab="Energy sub metering"))
 with(data, lines(PosixDate, Sub_metering_1))
 with(data, lines(PosixDate, Sub_metering_2, col="red"))
